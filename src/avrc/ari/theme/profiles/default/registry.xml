@@ -7,8 +7,8 @@
 
     <record interface="collective.xdv.interfaces.ITransformSettings" field="theme">
         <value>python://avrc.ari.theme/themes/default.html</value>
-    </record>
+    </record><!--
     <record interface="collective.xdv.interfaces.ITransformSettings" field="absolute_prefix">
         <value>/++resource++avrc.ari.theme.static</value>
     </record>
-</registry>
+--></registry>
