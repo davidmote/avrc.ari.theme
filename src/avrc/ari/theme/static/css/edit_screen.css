@@ -1316,4 +1316,7 @@ box-shadow:0 0 3em 0.5em #666;
 .mceContentBody ul {list-style: disc inside none;}
 .mceContentBody ol {list-style: decimal inside none;}
 
+#content-core ul {list-style: disc inside none;}
+#content-core ol {list-style: decimal inside none;}
+
 
