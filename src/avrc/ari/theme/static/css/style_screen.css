@@ -103,10 +103,10 @@ body#main-body {
 .nav-main ul.navTreeLevel0 li a {
     vertical-align: middle; 
     display: block; 
-    min-height: 2.1em; 
+    min-height: auto; 
     height: auto; 
-    height: 2.1em; 
-    line-height: 2.1em; 
+    height: auto; 
+    line-height: auto; 
     margin: 0px 0px 0px 0px; 
     padding: 0px 1px 0px 7px; 
     color: rgb(50,50,50); 
@@ -122,10 +122,10 @@ body#main-body {
 .nav-main ul.navTreeLevel1 li a {
     vertical-align: middle; 
     display: block; 
-    min-height: 2.1em; 
+    min-height: auto; 
     height: auto; 
-    height: 2.1em; 
-    line-height: 2.1em; 
+    height: auto; 
+    line-height: auto; 
     margin: 0px 0px 0px 0px; 
     padding: 0px 1px 0px 20px; 
     color: rgb(100,100,100); 
@@ -358,3 +358,8 @@ p {
     float: right; 
     margin: 2px 2px 4px 10px; 
     border: solid 1px rgb(183,210,239);}
+
+#text_ifr {
+    border: 1px solid;
+
+}
