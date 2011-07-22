@@ -20,7 +20,7 @@ body#main-body {
     clear: both; 
     float: left; 
     width: 900px; 
-    height: 120px; 
+    height: auto; 
     margin: 0px; 
     padding: 0px; 
     background-color: rgb(255,255,255);} 
@@ -33,32 +33,37 @@ body#main-body {
     margin: 0px; 
     padding: 0px; 
     background-color: rgb(255,255,255); 
-    border-bottom: solid 2px rgb(153,0,0); 
-    border-top: solid 2px rgb(153,0,0);}
+    border-bottom: solid 0px rgb(153,0,0); 
+    border-top: solid 0px rgb(153,0,0);}
 
 /* NAVIGATION */
 .nav-global-container {
     position: absolute; 
     z-index: 3; 
     width: 900px; 
-    margin-top: 5px; 
+    margin-top: 0px; 
     background-color: transparent;}
 
 .nav-global {
     float: right; 
     width: 820px; 
-    margin: 0px 3px 0px 15px; 
+    margin: 0px 15px 0px 15px; 
     padding: 0px; 
     background-color: transparent;}
 
 .nav-global ul {
+    background: none repeat scroll 0 0 #990100;
+    //box-shadow: 5px 5px 5px #888888;
+    margin-right: 2px;
+    padding: 25px 5px 5px;
     float: right; 
     display: inline; 
     list-style: none; 
     margin: 0px; 
-    padding: 0px;}
+    padding: 5px 0px 5px 0px;}
 
 .nav-global li {
+    padding: 5px;
     display: inline; 
     white-space: nowrap; 
     text-transform: none;}
@@ -86,7 +91,7 @@ body#main-body {
     margin: 18px 0px 0px 15px; 
     padding: 0px;
     background-color: rgb(255,255,255); 
-    border-top: solid 1px rgb(205,205,205);}
+    border-top: solid 0px rgb(205,205,205);}
 
 .nav-main ul {
     /*float: left; */
@@ -171,12 +176,12 @@ body#main-body {
 
 /* CONTAINERS */
 .container-content-full {
+    margin: 0px 0px 0px 0px;
     float: left; 
     width: 900px; 
     min-height: 310px; 
     height: auto !important; 
     height: 310px; 
-    margin: 0px; 
     padding: 0px;
     background-color: rgb(255,255,255);}
 
@@ -307,7 +312,6 @@ p {
 
 /* HYPERLINKS FOR NAVIGATION TEXTS */
 .content-n-sidebar a {
-    color: rgb(153,0,0); 
     text-decoration: underline;}
 
 .content-n-sidebar a:hover {
@@ -361,5 +365,19 @@ p {
 
 #text_ifr {
     border: 1px solid;
+
+}
+
+#siteaction-sitemap {
+    margin:0px;
+    padding:0px;
+}
+
+#portal-siteactions {
+    padding: 5px;
+    margin: 0px;
+}
+#portal-siteactions li {
+    margin: 5px;
 
 }
