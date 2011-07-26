@@ -387,15 +387,19 @@ table {
 
 }
 td {
-	border-left: 1px outset black;
-	border-right: 1px outset black;
+	border: 1px outset black;
 	padding: 5px;
 }
 
 th {
-	border-left: 1px outset black;
-	border-right: 1px outset black;
-	border-top: 1px outset black;
+	border: 1px outset black;
 	padding: 5px;
 }
 
+#parent-fieldname-description {
+	display: none;
+}
+
+#plone-document-byline {
+	margin-bottom:5px;
+}
