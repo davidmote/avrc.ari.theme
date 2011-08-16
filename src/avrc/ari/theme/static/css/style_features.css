@@ -10,7 +10,7 @@
 
 * { margin: 0; padding: 0; }
 * :link,:visited { text-decoration:none }
-* ul,ol { list-style:bullet; }
+* ul,ol { list-style:none; }
 * a img,:link img,:visited img { border:none } 
 a { outline: none; }
 a:visited { color: #0000EE; }
@@ -1124,4 +1124,15 @@ th {
     padding:5px;
 }
 
+.footer a {
+    color: white;
+}
+
+.footer li {
+    list-style:none;
+}
+
+#content-core li {
+    list-style: none;
+}
 /* @end */
