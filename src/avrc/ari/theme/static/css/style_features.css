@@ -1133,6 +1133,6 @@ th {
 }
 
 #content-core li {
-    list-style: none;
+    list-style: bullet;
 }
 /* @end */
