@@ -10,7 +10,7 @@
 
 * { margin: 0; padding: 0; }
 * :link,:visited { text-decoration:none }
-* ul,ol { list-style:none; }
+* ul,ol { list-style:bullet; }
 * a img,:link img,:visited img { border:none } 
 a { outline: none; }
 a:visited { color: #0000EE; }
