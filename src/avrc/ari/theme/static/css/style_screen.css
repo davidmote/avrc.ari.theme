@@ -311,6 +311,8 @@ p {
     }
 
 /* HYPERLINKS FOR NAVIGATION TEXTS */
+/* Commenting this stuff out. I like regular colors */
+/*
 .content-n-sidebar a {
     text-decoration: underline;}
 
@@ -328,6 +330,7 @@ p {
 .footer a:hover {
     color: rgb(150,150,150); 
     text-decoration: none;}
+*/
 
 /* DEFAULT FONT SIZES */
 #nav-main-font {
@@ -377,7 +380,9 @@ p {
     padding: 5px;
     margin: 0px;
 }
+
 #portal-siteactions li {
     margin: 5px;
 
 }
+

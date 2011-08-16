@@ -13,6 +13,9 @@
 * ul,ol { list-style:none; }
 * a img,:link img,:visited img { border:none } 
 a { outline: none; }
+a:visited { color: #0000EE; }
+a:hover { text-decoration: underline; }
+
 table { border-spacing: 0; }
 img { vertical-align: text-bottom; }
 li {margin-bottom:0px;}
@@ -1107,6 +1110,18 @@ div.listingBar a:hover {
         color: White;
         background-color: #329fd7;
         border-color: #329fd7;
+}
+
+td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding:5px;
+}
+
+th {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding:5px;
 }
 
 /* @end */
