@@ -386,3 +386,8 @@ p {
 
 }
 
+#content-core li {
+    font-size:12px;
+    list-style: bullet;
+}
+

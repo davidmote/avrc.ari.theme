@@ -12,8 +12,9 @@
 * :link,:visited { text-decoration:none }
 * ul,ol { list-style:none; }
 * a img,:link img,:visited img { border:none } 
+
 a { outline: none; }
-a:visited { color: #0000EE; }
+/*a:visited { color: #0000EE; }*/
 a:hover { text-decoration: underline; }
 
 table { border-spacing: 0; }
