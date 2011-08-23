@@ -1,6 +1,6 @@
 /* MAIN BODY */
 body#main-body {
-    font-size: 62.5%; 
+    font-size: 12px; 
     margin: 0em auto; 
     padding: 0px; 
     font-family: verdana, sans-serif, tahoma,lucida Sans unicode, arial; 
@@ -269,7 +269,7 @@ p {
     display: block; 
     margin: auto; 
     padding: 30px 0px 0px 0px; 
-    font-size: 1.0em; 
+    font-size: 10px; 
     background: url(../img/footer.png) top center no-repeat; 
     background-color: rgb(33,73,115);
     line-height: 120%;}
@@ -340,7 +340,7 @@ p {
     font-size: 1.0em;}
 
 #footer-font {
-    font-size: 1.0em; 
+    font-size: 10px; 
     font-family: verdana;}
 
 #sidebar-font {
@@ -379,6 +379,7 @@ p {
 #portal-siteactions {
     padding: 5px;
     margin: 0px;
+    font-size: 10px;
 }
 
 #portal-siteactions li {
@@ -386,7 +387,7 @@ p {
 
 }
 
-#content-core li {
+#parent-fieldname-text li {
     font-size:12px;
     list-style: bullet;
 }

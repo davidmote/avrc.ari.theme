@@ -17,7 +17,7 @@ a { outline: none; }
 /*a:visited { color: #0000EE; }*/
 a:hover { text-decoration: underline; }
 
-table { border-spacing: 0; }
+table { border-collapse:collapse;border-spacing: 0; margin-top: 5px;}
 img { vertical-align: text-bottom; }
 li {margin-bottom:0px;}
 
@@ -1134,6 +1134,25 @@ th {
 }
 
 #content-core li {
-    list-style: bullet;
+    list-style-type:disc;
+    list-style: inside; 
+}
+
+#content {
+    margin-top:5px;
+
+}
+
+#content-core {
+    margin-top:5px;
+}
+dt {
+   margin-top:5px; 
+   margin-bottom:5px; 
+}
+
+#atct_subtopics_header {
+    margin-top:5px;
+
 }
 /* @end */
