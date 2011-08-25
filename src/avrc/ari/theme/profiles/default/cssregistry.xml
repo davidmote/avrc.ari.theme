@@ -4,12 +4,23 @@
  <!-- Set conditions on stylesheets we don't want to pull in -->
 
  <!-- Add new stylesheets -->
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="public.css"
+     />
+
+ <stylesheet
+     expression="not:request/HTTP_X_THEME_ENABLED | nothing"
+     id="member.css" authenticated="False"
+     />
 
  <!-- Note: applyPrefix is not available in Plone < 4.0b3 -->
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.ari.theme.static/css/style_screen.css" media="screen" rel="stylesheet"
+    id="++theme++avrc.ari.theme/theme-css/style_screen.css" 
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    media="screen" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
@@ -17,14 +28,15 @@
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="member | nothing"
-    id="++resource++avrc.ari.theme.static/css/edit_screen.css" media="screen" rel="stylesheet"
+    id="++theme++avrc.ari.theme/theme-css/edit_screen.css" media="screen" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
 
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
-    id="++resource++avrc.ari.theme.static/css/style_features.css" media="screen" rel="stylesheet"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    id="++theme++avrc.ari.theme.static/theme-css/style_features.css" media="screen" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />

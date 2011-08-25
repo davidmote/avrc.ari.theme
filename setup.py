@@ -25,7 +25,7 @@ setup(name='avrc.ari.theme',
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'collective.xdv',
+        'plone.app.theming',
         # -*- Extra requirements: -*-
     ],
     entry_points="""

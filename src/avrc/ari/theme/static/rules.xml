@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <xsl:variable name="wrapped" css:select="#visual-portal-wrapper"/>
+    <xsl:variable name="leftcolumns" css:select="#portal-column-one"/>
+    <xsl:variable name="rightcolumns" css:select="#portal-column-two"/>
+
+    <theme href="./default.html" />
+    <notheme if="not($wrapped)" />
+    <notheme if="$ajax_load" />
+
+    <replace css:theme="base" css:content="base" />
+    <rules if-content="$wrapped">
+        <replace css:theme="title" css:content="title" />
+        
+        <drop theme="/html/head/meta" />
+        <after content="/html/head/meta" theme-children="/html/head" />
+
+        <after
+        content-children="/html/head"
+        theme-children="/html/head"
+        />
+        
+        <drop theme="/html/head/style" />
+        <drop theme="/html/head/script" />
+        <drop theme="/html/head/link" />
+        
+        <merge attributes="class" css:content="body" css:theme="body" />
+        <copy attributes="id dir" css:content="body" css:theme="body" />
+        <copy attributes="href title accesskey" css:content="a#portal-logo" css:theme="area#logo" />
+        
+        <replace css:content="#portal-siteactions"
+         css:theme-children="#site-actions" />
+        
+        <replace css:content="#portal-globalnav"
+        css:theme-children="#footer-actions"  />
+        
+        <replace css:content-children="#portal-column-one .navTreeLevel0"   css:theme-children="#nav-main > ul" />
+        
+        <after css:content="#portal-column-one .managePortletsLink" css:theme-children="#nav-main" />
+        
+        <drop css:content='a.navTreeFolderish > img' />
+        <drop css:content=".documentByLine" />
+        
+        <replace css:content="#portal-column-content"
+         css:theme-children="#content-box"  />
+        
+        <replace css:theme-children=".sidebar" css:content-children="#portal-column-two>*" />
+        
+        <after css:content="#portal-personaltools"
+        css:theme-children="#footer-actions"  />
+        
+        <after css:content="#visual-portal-wrapper script"
+        css:theme-children="body" />
+    </rules>
+
+</rules>

@@ -4,7 +4,7 @@ body#main-body {
     margin: 0em auto; 
     padding: 0px; 
     font-family: verdana, sans-serif, tahoma,lucida Sans unicode, arial; 
-    background: url(../img/bg.jpg) top center repeat-x; 
+    background: url(../theme-images/bg.jpg) top center repeat-x; 
     background-color: rgb(33,73,115);}
 
 .page-container {
@@ -120,7 +120,7 @@ body#main-body {
     border-bottom: solid 1px rgb(205,205,205); 
     border-left: solid 0px rgb(215,215,215); 
     border-right: solid 0px rgb(215,215,215); 
-    background-image:url(../img/menu_arrow.jpg); 
+    background-image:url(../theme-images/menu_arrow.jpg); 
     background-repeat:no-repeat; 
     background-position: right;}
 
@@ -224,7 +224,7 @@ body#main-body {
 
 .sidebarbox-border, .portlet {
     padding: 10px 10px 35px 10px; 
-    background: url('../img/bg-side.gif') bottom no-repeat; 
+    background: url('../theme-images/bg-side.gif') bottom no-repeat; 
     border-top: 1px solid #b8b8b8; 
     border-left:none; 
     margin: 0 0 15px 0;}
@@ -246,6 +246,14 @@ h2 {
     font-size: 20px; 
     color: rgb(0,0,0);}
 
+.documentDescription {    
+    font-family: Palatino Linotype; 
+    margin: 0.1em 0px 0.2em 0px; 
+    font-weight: normal; 
+    font-size: 16px;
+    font-style: italic;
+    color: rgb(0,0,0);}
+
 h3, .portletHeader {
     clear: left; 
     margin: 0px 0px 5px 0px; 
@@ -255,7 +263,10 @@ h3, .portletHeader {
 
 /* PARAGRAPH */
 p {
+/*
     margin: 0px 0px 0.1em 0px; 
+*/
+    margin: 1em 0;
     padding: 0px; 
     line-height: 17px; 
     font-size: 12px;}
@@ -270,7 +281,7 @@ p {
     margin: auto; 
     padding: 30px 0px 0px 0px; 
     font-size: 10px; 
-    background: url(../img/footer.png) top center no-repeat; 
+    background: url(../theme-images/footer.png) top center no-repeat; 
     background-color: rgb(33,73,115);
     line-height: 120%;}
 
@@ -297,6 +308,16 @@ p {
     float:left;
     margin:5px;
     padding-left:10px;
+    list-style:none;
+    }
+
+.footer ul li a,
+#portal-personaltools a,
+.footer ul li a:hover,
+#portal-personaltools a:hover {
+    color:white;
+    text-decoration:none
+
     }
 
 #portal-personaltools dd {
@@ -309,7 +330,12 @@ p {
 #portaltab-index_html {
     border-left: none;
     }
-
+.actionMenuContent ul {
+    margin-left: 0px;
+}
+dd.portletItem {
+    margin-left: 0px;
+}
 /* HYPERLINKS FOR NAVIGATION TEXTS */
 /* Commenting this stuff out. I like regular colors */
 /*
@@ -377,7 +403,7 @@ p {
 }
 
 #portal-siteactions {
-    padding: 5px;
+    padding: 10px 5px;
     margin: 0px;
     font-size: 10px;
 }
@@ -391,4 +417,5 @@ p {
     font-size:12px;
     list-style: bullet;
 }
+
 

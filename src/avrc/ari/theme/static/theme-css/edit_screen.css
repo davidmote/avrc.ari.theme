@@ -389,7 +389,9 @@ dl.actionMenu.activated dd a,
 dl.actionMenu.activated dd div {
     margin: 0 0.25em;
 }
-
+dt.actionMenuHeader {
+    margin:0px;
+}
 /* @end */
 
 /* @group Control panel */
