@@ -6,17 +6,16 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="avrc.ari.theme">
 
-<includeDependencies package="." />
-
+  <includeDependencies package="." />
 
   <genericsetup:registerProfile
-      name="ARI Theme"
-      title="ARI Theme"
+      name="default"
       directory="profiles/default"
-      description="Installs the avrc.ari.theme package"
+      title="ARI Theme"
+      description="Installs ARI theme."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
       
-    <plone:static
-        type="theme" directory="static" />
+  <plone:static type="theme" directory="static" />
+    
 </configure>
