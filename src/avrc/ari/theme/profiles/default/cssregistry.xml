@@ -36,7 +36,7 @@
  <stylesheet title="" authenticated="False" cacheable="True"
     compression="safe" conditionalcomment="" cookable="True" enabled="on"
     expression="request/HTTP_X_THEME_ENABLED | nothing"
-    id="++theme++avrc.ari.theme.static/theme-css/style_features.css" media="screen" rel="stylesheet"
+    id="++theme++avrc.ari.theme/theme-css/style_features.css" media="screen" rel="stylesheet"
     rendering="link"
     applyPrefix="True"
     />
