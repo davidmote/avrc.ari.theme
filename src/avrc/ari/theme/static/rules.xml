@@ -8,6 +8,7 @@
     <xsl:variable name="leftcolumns" css:select="#portal-column-one"/>
     <xsl:variable name="rightcolumns" css:select="#portal-column-two"/>
 
+    <theme href="./home.html" if-path="/ front-page/" />
     <theme href="./default.html" />
     <notheme if="not($wrapped)" />
     <notheme if="$ajax_load" />
@@ -44,6 +45,9 @@
         
         <drop css:content='a.navTreeFolderish > img' />
         <drop css:content=".documentByLine" />
+        <strip css:theme=".cell" />
+        <strip css:theme=".width-1:2" />
+        <strip css:theme=".width-1:4" />
         
         <replace css:content="#portal-column-content"
          css:theme-children="#content-box"  />
