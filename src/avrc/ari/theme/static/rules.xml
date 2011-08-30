@@ -45,14 +45,13 @@
         
         <drop css:content='a.navTreeFolderish > img' />
         <drop css:content=".documentByLine" />
-        <strip css:theme=".cell" />
-        <strip css:theme=".width-1:2" />
-        <strip css:theme=".width-1:4" />
-        
+
         <replace css:content="#portal-column-content"
          css:theme-children="#content-box"  />
         
         <replace css:theme-children=".sidebar" css:content-children="#portal-column-two>*" />
+
+        <drop attributes="class" css:content=".cell" />
         
         <after css:content="#portal-personaltools"
         css:theme-children="#footer-actions"  />
