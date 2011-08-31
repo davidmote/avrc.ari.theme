@@ -8,7 +8,6 @@
     <xsl:variable name="leftcolumns" css:select="#portal-column-one"/>
     <xsl:variable name="rightcolumns" css:select="#portal-column-two"/>
 
-    <theme href="./home.html" if-path="/ front-page/" />
     <theme href="./default.html" />
     <notheme if="not($wrapped)" />
     <notheme if="$ajax_load" />
