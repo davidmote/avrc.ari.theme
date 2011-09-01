@@ -16,14 +16,15 @@ body#main-body {
     background-color:rgb(255,255,255);}
 
 /* HEADER */
-.img-header {
+.page-header {
     clear: both; 
     float: left; 
     width: 900px; 
     height: auto; 
     margin: 0px; 
     padding: 0px; 
-    background-color: rgb(255,255,255);} 
+    background-color: rgb(255,255,255);
+    } 
 
 .container-slide {
     clear: both; 
@@ -32,9 +33,48 @@ body#main-body {
     height: 300px; 
     margin: 0px; 
     padding: 0px; 
-    background-color: rgb(255,255,255); 
     border-bottom: solid 0px rgb(153,0,0); 
-    border-top: solid 0px rgb(153,0,0);}
+    border-top: solid 0px rgb(153,0,0);
+/*
+    background-image: url("++theme++avrc.ari.theme/theme-images/bg-collage.png");
+    background-repeat: repeat-x;
+*/
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    }
+    
+.slogan {
+    color: #214793;
+    float: left;
+    font-family: Palatino Linotype;
+    font-size: 1.95em;
+    height: 70px;
+    padding: 5px 5px 5px 20px;
+    position: relative;
+    top: -70px;
+    width: 700px;
+    line-height: 1.35em;
+
+}
+
+a.action-call,
+a.action-call:hover,
+a.action-call:visited,
+a.action-call:active {
+    display:block;
+    background: none repeat scroll 0 0 #990100;
+    color: white;
+    float: right;
+    font-size: 1.1em;
+    margin-top: 10px;
+    position: relative;
+    right: 25px;
+    top: -70px;
+    padding: 5px 12px;
+    text-decoration: none;
+
+}
 
 /* NAVIGATION */
 .nav-global-container {
@@ -234,23 +274,24 @@ h1 {
     clear: left; 
     font-family: Palatino Linotype; 
     margin: 0.1em 0px 0.2em 0px; 
-    font-weight: normal; 
-    font-size: 20px; 
-    color: rgb(0,0,0);}
+    font-weight: bold; 
+    font-size: 2.1em;
+    color: black;
+    text-shadow: #f6f6f6 1px 1px}
 
 h2 {    
     clear: left; 
     font-family: Palatino Linotype; 
     margin: 0.1em 0px 0.2em 0px; 
     font-weight: normal; 
-    font-size: 20px; 
+    font-size: 2.0em; 
     color: rgb(0,0,0);}
 
 .documentDescription {    
     font-family: Palatino Linotype; 
     margin: 0.1em 0px 0.2em 0px; 
     font-weight: normal; 
-    font-size: 16px;
+    font-size: 1.4em;
     font-style: italic;
     color: rgb(0,0,0);}
 
@@ -258,7 +299,7 @@ h3, .portletHeader {
     clear: left; 
     margin: 0px 0px 5px 0px; 
     font-weight: normal; 
-    font-size: 14px; 
+    font-size: 1.4em; 
     color: rgb(0,0,0)}
 
 /* PARAGRAPH */
@@ -268,8 +309,8 @@ p {
 */
     margin: 1em 0;
     padding: 0px; 
-    line-height: 17px; 
-    font-size: 12px;}
+    line-height: 1.7em; 
+    font-size: 1em;}
 
 /* FOOTER */
 .footer {

@@ -30,7 +30,9 @@
         
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
-        <copy attributes="href title accesskey" css:content="a#portal-logo" css:theme="area#logo" />
+        
+        <copy attributes="href title accesskey" css:content="a#portal-logo" css:theme="a#logo" />
+        
         
         <replace css:content="#portal-siteactions"
          css:theme-children="#site-actions" />
