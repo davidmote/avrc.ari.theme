@@ -48,13 +48,14 @@ body#main-body {
     color: #214793;
     float: left;
     font-family: Palatino Linotype;
-    font-size: 1.95em;
+    font-size: 1.78em;
     height: 70px;
     padding: 5px 5px 5px 20px;
     position: relative;
     top: -70px;
     width: 700px;
-    line-height: 1.35em;
+    line-height: 1.30em;
+    overflow: hidden;
 
 }
 
