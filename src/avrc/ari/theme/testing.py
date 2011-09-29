@@ -6,20 +6,28 @@ from plone.app.testing import FunctionalTesting
 
 from zope.configuration import xmlconfig
 
-class LeadthewayTheme(PloneSandboxLayer):
+
+class AriThemeSandBoxLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
         # Load ZCML
-        import avrc.theme.leadtheway
-        xmlconfig.file('configure.zcml', avrc.theme.leadtheway, context=configurationContext)
+        import avrc.ari.theme
+        xmlconfig.file('configure.zcml', avrc.ari.theme, context=configurationContext)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'avrc.theme.leadtheway:default')
+        applyProfile(portal, 'avrc.ari.theme:default')
 
-LEADTHEWAY_THEME_FIXTURE = LeadthewayTheme()
 
-LEADTHEWAY_THEME_INTEGRATION_TESTING = IntegrationTesting(bases=(LEADTHEWAY_THEME_FIXTURE,), name="LeadthewayTheme:Integration")
+ARI_THEME_FIXTURE = AriThemeSandBoxLayer()
 
-LEADTHEWAY_THEME_FUNCTIONAL_TESTING = FunctionalTesting(bases=(LEADTHEWAY_THEME_FIXTURE,), name="LeadthewayTheme:Functional")
+ARI_THEME_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(ARI_THEME_FIXTURE,),
+    name='AriTheme:Integration'
+    )
+
+ARI_THEME_FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(ARI_THEME_FIXTURE,),
+    name='AriTheme:Functional'
+    )
