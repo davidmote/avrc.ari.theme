@@ -1,4 +1,5 @@
+<?xml version="1.0"?>
 <theme>
-    <name>avrc.ari.theme</name>
-    <enabled>true</enabled>
+  <name>avrc.ari.theme</name>
+  <enabled>true</enabled>
 </theme>
