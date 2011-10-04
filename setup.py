@@ -6,10 +6,10 @@ version = '0.6.6'
 setup(
     name='avrc.ari.theme',
     version=version,
-    description="AIDS Research Institute XDV Theme",
+    description='AIDS Research Institute Plone Theme',
     classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
+        'Framework :: Plone',
+        'Programming Language :: Python',
         ],
     keywords='',
     author='BEAST Core Development Team',
