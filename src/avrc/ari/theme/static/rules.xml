@@ -57,8 +57,9 @@
         <after css:content="#portal-personaltools"
         css:theme-children="#footer-actions"  />
         
-        <after css:content="#visual-portal-wrapper script"
-        css:theme-children="body" />
+        <after css:content="#visual-portal-wrapper div.row script" css:theme-children="body" />
+        <after css:content="#visual-portal-wrapper div.row noscript" css:theme-children="body" />
+        
     </rules>
 
 </rules>
