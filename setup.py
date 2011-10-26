@@ -1,20 +1,20 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.6.5'
+version = '0.6.6'
 
 setup(
     name='avrc.ari.theme',
     version=version,
-    description="AIDS Research Institute XDV Theme",
+    description='AIDS Research Institute Plone Theme',
     classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
+        'Framework :: Plone',
+        'Programming Language :: Python',
         ],
     keywords='',
     author='BEAST Core Development Team',
     author_email='beast@ucsd.edu',
-    url='http://datam0nk3y.org/',
+    url='https://github.com/beastcore/avrc.ari.theme',
     license='GPL',
     packages=find_packages('src', exclude=['ez_setup']),
     package_dir={'':'src'},
@@ -25,6 +25,9 @@ setup(
         'setuptools',
         'plone.app.theming',
         ],
+    extras_require=dict(
+        test=['plone.app.testing'],
+        ),
     entry_points="""
     [z3c.autoinclude.plugin]
     target = plone
