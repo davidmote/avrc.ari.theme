@@ -7,6 +7,8 @@
     i18n_domain="avrc.ari.theme">
 
   <includeDependencies package="." />
+  
+  <plone:static type="theme" directory="static" />
 
   <genericsetup:registerProfile
       name="default"
@@ -15,7 +17,5 @@
       description="Installs ARI theme."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-      
-  <plone:static type="theme" directory="static" />
-    
+     
 </configure>
